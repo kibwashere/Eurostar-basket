@@ -1,0 +1,105 @@
+/***********/
+/* Generic */ 
+/***********/
+html, body {
+	min-height: 100%;
+	margin: 0; 
+	padding: 0;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+#content {
+	padding: 100px 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+#header,
+#footer {
+	height: 100px;
+}
+#header {
+	margin-top:-100px;
+}
+#header img {
+	width: 150px;
+	padding: 20px;
+	padding-left: 150px;
+}
+#footer {
+    background-color: #0F1B46; /* For browsers that do not support gradients */
+    color: white;
+	height: 100px;
+	text-align: center;
+	margin-bottom:-100px;
+}
+
+/********/
+/* Main */
+/********/
+#main {
+	min-height: 100%;
+	background-color: #24B5C9;
+}
+#productsBox {
+	display: inline-block;
+	width: 65%;
+}
+#basketBox {
+	display: inline-block;
+	vertical-align: top;
+	width: 34%;
+}
+
+#products {
+	margin: 50px;
+	padding: 10px;
+}
+#products > div {
+	padding: 10px;
+	border: 2px solid black;
+}
+#offers {
+	margin: 50px;
+	padding: 10px;
+}
+#basket {
+	margin: 50px;
+	padding: 10px;
+}
+
+.product {
+	padding: 20px;
+	display: inline-block;
+	text-align: center;
+	width: 150px;
+
+}
+.product:hover {
+	color: white;
+	background-color: rgba(16, 28, 71, 1);
+	cursor: pointer;
+}
+
+.total {
+	text-align: right;
+}
+
+/***********/
+/* Paterns */
+/***********/
+.eurostarBlue {
+    background: #1D497C; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#1D497C, #0E1741); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#1D497C, #0E1741); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#1D497C, #0E1741); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#1D497C, #0E1741); /* Standard syntax */
+}
+.eurostarWhite {
+    background: #FFFFFF; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#FFFFFF, #CDCDCD); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FFFFFF, #CDCDCD); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFFFFF, #CDCDCD); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FFFFFF, #CDCDCD); /* Standard syntax */
+}
