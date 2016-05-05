@@ -58,7 +58,7 @@ html, body {
 }
 #products > div {
 	padding: 10px;
-	border: 2px solid black;
+	border: 1px solid black;
 }
 #offers {
 	margin: 50px;

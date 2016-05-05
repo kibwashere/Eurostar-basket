@@ -11,12 +11,15 @@
 
 		<div id="content">
 
+			<!-- Header -->
 			<div id="header" class="eurostarBlue">
 				<img src="img/logo.png" alt="logo">
 			</div>
 
+			<!-- Main -->
 			<div id="main">
 				<div id="productsBox"> 
+					<!-- Available products -->
 					<div id="products" class="eurostarWhite">
 						<h2><u>Products:</u></h2>
 						<div>
@@ -25,6 +28,7 @@
 							<div class="product" product-name="milk"> <img src="img/lait.png" alt="milk"> <br/> Milk - £1.15</div>
 						</div>
 					</div>
+					<!-- Offers -->
 					<div id="offers" class="eurostarWhite">
 						<h2><u>Offers:</u></h2>
 						<div>
@@ -36,16 +40,18 @@
 					</div>
 				</div>
 
+				<!-- Basket -->
 				<div id="basketBox">
 					<div id="basket" class="eurostarWhite">
 						<h2><u>Basket:</u></h2>
 						<div>
-
+						<!-- It will contain every items -->
 						</div>
 					</div>
 				</div>
 			</div>
 
+			<!-- Footer -->
 			<div id="footer" class="eurostarBlue">
 				<br/>
 				<span>Technical test regarding the Graduate Software Engineer position at Eurostar<br/>by Arthur Moreau</span>
@@ -59,10 +65,24 @@
 
 		<!-- Personalized functions -->
 		<script src="js/functions.js"></script>
+
 		<!-- Personalized script -->
 		<script type="text/javascript">
-			var listOfProductsInTheBasket = {};
+			var listOfProductsInTheBasket = {}; //e.g. {bread: 3, milk: 19}
 
+			//Add a product in the basket
+			$( ".product" ).click(function() {
+				//Get the product clicked
+				var productName = $(this).attr("product-name");
+				if (listOfProductsInTheBasket[productName]) {
+					listOfProductsInTheBasket[productName]++;
+				}
+				else {
+					listOfProductsInTheBasket[productName] = 1;
+				}
+				//Refresh the basket
+				refreshBasket(listOfProductsInTheBasket);
+			});
 		</script>
 
 	</body>
